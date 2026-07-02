@@ -33,9 +33,12 @@
 
         // Esto une los correos con una coma para la URL.
         const listaDestinatarios = destinatariosCco.join(",");
+
+        // Toma un asunto aleatorio y lo pone en el asunto de cada correo
+        const asunto = asuntos[Math.floor(Math.random() * asuntos.length)];
         
         // Codifica el asunto y el cuerpo del mensaje para que la URL sea válida.
-        const asuntoCodificado = encodeURIComponent(asuntos);
+        const asuntoCodificado = encodeURIComponent(asunto);
         const cuerpoCodificado = encodeURIComponent(cuerpoMensaje);
 
         // Construye la URL completa con el parámetro 'bcc' para la copia oculta.
