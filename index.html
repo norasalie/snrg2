@@ -35,7 +35,7 @@
         const listaDestinatarios = destinatariosCco.join(",");
         
         // Codifica el asunto y el cuerpo del mensaje para que la URL sea válida.
-        const asuntoCodificado = encodeURIComponent(asunto);
+        const asuntoCodificado = encodeURIComponent(asuntos);
         const cuerpoCodificado = encodeURIComponent(cuerpoMensaje);
 
         // Construye la URL completa con el parámetro 'bcc' para la copia oculta.
